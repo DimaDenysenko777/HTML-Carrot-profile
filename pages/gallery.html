@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея Сочная морковка</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            background-color: #FFA07A; /* Нежно-оранжевый цвет для фона */
+            flex-grow: 1;
+        }
+
+        header {
+            background-color: #FFE4B5; /* Светлый оранжевый для хедера */
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #FF8C00; /* Темный оранжевый для футера */
+            padding: 10px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        nav button {
+            margin: 5px;
+            padding: 10px;
+            background-color: #FF7F50; /* Цвет кнопок */
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        nav button:hover {
+            background-color: #FF6347; /* Цвет кнопок при наведении */
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 картинки в ряд */
+            gap: 20px; /* Отступы между картинками */
+        }
+
+        .gallery img {
+            width: 100%; /* Картинки занимают всю ширину ячейки */
+            height: auto;
+            border-radius: 10px; /* Закругленные углы */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для красоты */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header с кнопками и названием -->
+    <header>
+        <h1>Сочная морковка - Галерея</h1>
+        <nav>
+            <!-- Переходы на другие страницы -->
+            <button onclick="location.href='HW 21.1.html'">Main</button>
+            <button onclick="location.href='contact.html'">Contact</button>
+            <button onclick="location.href='gallery.html'">Gallery</button>
+        </nav>
+    </header>
+
+    <!-- Основной контент страницы -->
+    <main>
+        <!-- Галерея из 8 картинок -->
+        <div class="gallery">
+            <img src="../images/carrot9.jpg" alt="Морковка 1">
+            <img src="../images/carrot2.jpg" alt="Морковка 2">
+            <img src="../images/carrot3.jpg" alt="Морковка 3">
+            <img src="../images/carrot4.jpg" alt="Морковка 4">
+            <img src="../images/carrot5.jpg" alt="Морковка 5">
+            <img src="../images/carrot6.jpg" alt="Морковка 6">
+            <img src="../images/carrot7.jpg" alt="Морковка 7">
+            <img src="../images/carrot8.jpg" alt="Морковка 8">
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Computer School Hillel</p>
+    </footer>
+
+</body>
+</html>
