@@ -1,0 +1,200 @@
+/* Общие стили для html и body */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-background {
+    background-color: #FFA07A; /* Нежно-оранжевый цвет для фона */
+    flex-grow: 1;
+}
+
+/* Стили для header */
+.header {
+    background-color: #FFE4B5; /* Светлый оранжевый для хедера */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Стили для footer */
+.footer {
+    background-color: #FF8C00; /* Темный оранжевый для футера */
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Стили для навигационных кнопок */
+.nav-button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #FF7F50; /* Цвет кнопок */
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav-button:hover {
+    background-color: #FF6347; /* Цвет кнопок при наведении */
+}
+
+/* Контейнер основного контента */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Стили для блоков на странице контактов */
+.block {
+    width: 60%;
+    background-color: #FFE4B5;
+    padding: 20px;
+    margin: 20px auto; /* Центрирование блока и добавление отступов сверху и снизу */
+    border-radius: 10px;
+    text-align: center; /* Заголовки по центру */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для блока */
+    font-size: 18px;
+    line-height: 1.8; /* Увеличенный межстрочный интервал */
+}
+
+.block p {
+    text-align: left; /* Текст внутри блоков по левому краю */
+}
+
+/* Стили для таблицы (из предыдущих изменений) */
+.table-container {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Стили для формы (из предыдущих изменений) */
+.form-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #FFE4B5; /* Светлый оранжевый фон */
+    border-radius: 10px; /* Закругленные углы */
+}/* Общие стили для html и body */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-background {
+    background-color: #FFA07A; /* Нежно-оранжевый цвет для фона */
+    flex-grow: 1;
+}
+
+/* Стили для header */
+.header {
+    background-color: #FFE4B5; /* Светлый оранжевый для хедера */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Стили для footer */
+.footer {
+    background-color: #FF8C00; /* Темный оранжевый для футера */
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Стили для навигационных кнопок */
+.nav-button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #FF7F50; /* Цвет кнопок */
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nav-button:hover {
+    background-color: #FF6347; /* Цвет кнопок при наведении */
+}
+
+/* Специфические стили для первой страницы HW 21.1 */
+.hw21-main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.hw21-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.hw21-left, .hw21-right {
+    width: 48%;
+}
+
+.hw21-left {
+    text-align: left;
+    font-size: 18px;
+}
+
+.hw21-right img {
+    width: 100%;
+    height: auto;
+}
+
+/* Стили для формы */
+.hw21-form-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #FFE4B5;
+    border-radius: 10px;
+}
+
+/* Стили для таблицы */
+.hw21-table-container {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hw21-table-container, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+/* Стили для галереи */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 картинки в ряд */
+    gap: 20px; /* Отступы между картинками */
+    margin-top: 20px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для красоты */
+}

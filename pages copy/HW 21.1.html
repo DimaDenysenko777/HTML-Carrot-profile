@@ -3,26 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="HW 21.1.css"> <!-- Подключаем общий CSS -->
+    <link rel="stylesheet" href="HW 21.1.css">
     <title>Сочная морковка</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            background-color: #FFA07A; /* Нежно-оранжевый цвет для фона */
+            flex-grow: 1;
+        }
+
+        header {
+            background-color: #FFE4B5; /* Светлый оранжевый для хедера */
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #FF8C00; /* Темный оранжевый для футера */
+            padding: 10px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        nav button {
+            margin: 5px;
+            padding: 10px;
+            background-color: #FF7F50; /* Цвет кнопок */
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        nav button:hover {
+            background-color: #FF6347; /* Цвет кнопок при наведении */
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left, .right {
+            width: 48%;
+        }
+
+        .left {
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .right img {
+            width: 100%;
+            height: auto;
+        }
+
+        form {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #FFE4B5;
+            border-radius: 10px;
+        }
+
+        ul {
+            margin-top: 20px;
+            list-style-type: square;
+        }
+
+        table {
+            margin-top: 20px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        iframe {
+            margin-top: 20px;
+        }
+    </style>
 </head>
-<body class="body-background">
+<body>
 
     <!-- Header с кнопками и названием -->
-    <header class="header">
+    <header>
         <h1>Сочная морковка</h1>
         <nav>
-            <button class="nav-button" onclick="location.href='HW 21.1.html'">Main</button>
-            <button class="nav-button" onclick="location.href='contact.html'">Contact</button>
-            <button class="nav-button" onclick="location.href='gallery.html'">Gallery</button>
+            <button onclick="location.href='HW 21.1.html'">Main</button>
+            <button onclick="location.href='contact.html'">Contact</button>
+            <button onclick="location.href='gallery.html'">Gallery</button>
         </nav>
     </header>
 
     <!-- Основной контент страницы -->
-    <main class="hw21-main-content">
-        <div class="hw21-content">
-            <!-- Левый блок с описанием -->
-            <div class="hw21-left">
+    <main>
+        <!-- Левый блок с описанием -->
+        <div class="content">
+            <div class="left">
                 <h2>Полезные качества морковки</h2>
                 <p>Морковка – это один из самых полезных овощей в мире. Она богата каротином, который в организме преобразуется в витамин А. Этот витамин не только улучшает зрение, но и поддерживает здоровье кожи, укрепляет иммунную систему и помогает предотвратить болезни сердца.</p>
                 
@@ -31,7 +129,7 @@
                 <p>Кроме каротина, морковь содержит множество других витаминов и минералов, включая витамины группы В, витамин С и калий. Морковь также богата антиоксидантами, которые помогают бороться с воспалениями в организме и снижают риск развития рака.</p>
                 
                 <!-- Добавляем форму -->
-                <form class="hw21-form-container" action="self.php">
+                <form action="self.php">
                     <label for="text">Ваш вопрос про морковь:</label>
                     <input type="text" id="text" name="text">
                     <input type="submit" value="Отправить">
@@ -45,7 +143,7 @@
                 </ul>
 
                 <!-- Добавляем таблицу -->
-                <table class="hw21-table-container">
+                <table>
                     <caption>Сравнение витаминов в овощах</caption>
                     <tr>
                         <th>Овощ</th>
@@ -76,14 +174,14 @@
             </div>
 
             <!-- Правый блок с картинкой -->
-            <div class="hw21-right">
+            <div class="right">
                 <img src="../images/carrot1.jpg" alt="Морковка">
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <p>© 2024 Computer School Hillel</p>
     </footer>
 
